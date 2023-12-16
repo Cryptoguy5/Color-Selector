@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Selector</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            background-color: white;
+            height: 85%;
+            width: 85%;
+            border: 5px solid gray;
+            text-align: center;
+        }
+
+        .section {
+            height: 50%;
+            width: 100%;
+            border: 2px solid black ;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            grid-template-rows: repeat(4, auto);
+            height: 42%;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .orangered {
+            background-color: orangered;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .gold {
+            background-color: gold;
+        }
+
+        .lawngreen {
+            background-color: lawngreen;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .indigo {
+            background-color: indigo;
+        }
+
+        .violet {
+            background-color: violet;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .brown {
+            background-color: brown;
+        }
+
+        .silver {
+            background-color: silver;
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .black {
+            background-color: black;
+        }
+
+
+
+        button {
+            margin: 5px;
+        }
+
+        .grey {
+            background-color: gray;
+        }
+
+        h1 {
+            background-color: gray;
+            margin: 0;
+            color: white;
+        }
+
+        @media (min-width: 680px) {
+            .main {width: 100%;}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Color Selector</h1>
+       <div class="section ">
+       </div>
+       <div class="section grid grey">
+         <button onclick="colorRed()" class="red"></button>
+         <button onclick="colorOrangeRed()" class="orangered"></button>
+         <button onclick="colorOrange()" class="orange"></button>
+         <button onclick="colorYellow()" class="yellow"></button>
+         <button onclick="colorGold()" class="gold"></button>
+         <button onclick="colorLawnGreen()" class="lawngreen"></button>
+         <button onclick="colorGreen()" class="green"></button>
+         <button onclick="colorCyan()" class="cyan"></button>
+         <button onclick="colorBlue()" class="blue"></button>
+         <button onclick="colorIndigo()" class="indigo"></button>
+         <button onclick="colorViolet()" class="violet"></button>
+         <button onclick="colorPurple()" class="purple"></button>
+         <button onclick="colorBrown()" class="brown"></button>
+         <button onclick="colorSilver()" class="silver"></button>
+         <button onclick="colorWhite()" class="white"></button>
+         <button onclick="colorBlack()" class="black"></button>
+       </div>
+    </div>
+    <script>
+        function colorRed() {
+            document.querySelector(".section").style.background="red";
+        }
+
+        function colorOrangeRed() {
+            document.querySelector(".section").style.background="orangered";
+        }
+
+        function colorOrange() {
+            document.querySelector(".section").style.background="orange";
+        }
+
+        function colorYellow() {
+            document.querySelector(".section").style.background="yellow";
+        }
+
+        function colorGold() {
+            document.querySelector(".section").style.background="gold";
+        }
+
+        function colorLawnGreen() {
+            document.querySelector(".section").style.background="lawngreen";
+        }
+
+        function colorGreen() {
+            document.querySelector(".section").style.background="green";
+        }
+
+        function colorCyan() {
+            document.querySelector(".section").style.background="cyan";
+        }
+
+        function colorBlue() {
+            document.querySelector(".section").style.background="blue";
+        }
+
+        function colorIndigo() {
+            document.querySelector(".section").style.background="indigo";
+        }
+
+        function colorViolet() {
+            document.querySelector(".section").style.background="violet";
+        }
+
+        function colorPurple() {
+            document.querySelector(".section").style.background="purple";
+        }
+
+        function colorBrown() {
+            document.querySelector(".section").style.background="brown";
+        }
+
+        function colorSilver() {
+            document.querySelector(".section").style.background="silver";
+        }
+
+        function colorWhite() {
+            document.querySelector(".section").style.background="white";
+        }
+
+        function colorBlack() {
+            document.querySelector(".section").style.background="black";
+        }
+    </script>
+</body>
+</html>
